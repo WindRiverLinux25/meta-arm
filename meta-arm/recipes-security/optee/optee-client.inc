@@ -19,6 +19,7 @@ S = "${WORKDIR}/git"
 EXTRA_OECMAKE = " \
     -DBUILD_SHARED_LIBS=ON \
     -DCFG_USE_PKGCONFIG=ON \
+    -DCFG_TEE_PLUGIN_LOAD_PATH='${libdir}/tee-supplicant/plugins/' \
 "
 
 # libts uses /dev/tee devices too. Add a common variable to allow configuring the same group.
